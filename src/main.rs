@@ -1,6 +1,7 @@
 fn main() {
     sample_if();
     multiple_if();
+    if_let();
 }
 
 fn sample_if() {
@@ -25,4 +26,15 @@ fn multiple_if() {
     } else {
         println!("number is not divisible by 4, 3 or 2");
     }
+}
+
+fn if_let() {
+    let condition = true;
+    let number = if condition {
+        5
+    } else {
+        6
+    };
+
+    println!("The value of number is: {}", number);
 }
